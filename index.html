@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <link href="main.css" type="text/css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width">
+  <title>
+   Happy Birthday Ishu Didi
+  </title>
+ </head>
+ <body>
+ <section id="h_one_container">
+  <div id="h_one_semi">
+   <img src="text_bday.png" alt="Happy Bday Ishu Didi" id="h_one">
+  </div>
+</section>
+    <h1 id="what"></h1>
+  <section>
+   <div>
+    <img src="photo_1.jpeg" id="s_1">
+    <img src="photo_2.jpeg" id="s_2">
+    <img src="photo_3.jpeg" id="s_3">
+    <img src="photo_4.jpeg" id="s_4">
+    <audio src="I-Wish-You-Happy-Birthday.mp3" id="so_1"></audio>
+    <audio src="Hindi-Birthday-Song.mp3" id="so_2"></audio>
+    <audio src="Happy-Birthday-To-You-Alternative.mp3" id="so_3"></audio>
+    <audio src="Its-Your-Birthday.mp3" id="so_4"></audio>
+    <h1>Click on one of your pics to play a song</h1>
+   </div>
+  </section>
+  <script>
+   const music = document.getElementById("so_1");
+   const music2 = document.getElementById("so_2");
+   const music3 = document.getElementById("so_3");
+   const music4 = document.getElementById("so_4");
+   const play = document.getElementById("s_1");
+   const play2 = document.getElementById("s_2");
+   const play3 = document.getElementById("s_3");
+   const play4 = document.getElementById("s_4");
+   const what = document.getElementById("what");
+   var msg;
+
+   //for song1
+   let isPlaying = false;
+
+   //for play function
+   const playMusic = () => {
+    isPlaying = true;
+    msg = "Song 1 is playing";
+    what.innerHTML=msg;
+    music.play();
+   }
+   // for pause function
+   const pauseMusic = () => {
+    isPlaying = false;
+    music.pause();
+   }
+   
+   play.addEventListener('click', () => {
+    if (isPlaying) {
+     pauseMusic();
+    }
+    else {
+     pauseMusic2();
+     pauseMusic3();
+     pauseMusic4();
+     playMusic();
+    }
+   })
+   
+   //for song2
+   let isPlaying2 = false;
+   //for play function
+   const playMusic2 = () => {
+    isPlaying2 = true;
+    msg = "Song 2 is playing";
+    what.innerHTML=msg;
+    music2.play();
+   }
+   // for pause function
+   const pauseMusic2 = () => {
+    isPlaying2 = false;
+    music2.pause();
+   }
+   
+   play2.addEventListener('click', () => {
+    if (isPlaying2) {
+     pauseMusic2();
+    }
+    else {
+     pauseMusic();
+     pauseMusic3();
+     pauseMusic4();
+     playMusic2();
+    }
+   })
+   
+   //for song3
+   let isPlaying3 = false;
+   //for play function
+   const playMusic3 = () => {
+    isPlaying3 = true;
+    msg = "Song 3 is playing";
+    what.innerHTML=msg;
+    music3.play();
+   }
+   // for pause function
+   const pauseMusic3 = () => {
+    isPlaying3 = false;
+    music3.pause();
+   }
+   
+   play3.addEventListener('click', () => {
+    if (isPlaying3) {
+     pauseMusic3();
+    }
+    else {
+     pauseMusic();
+     pauseMusic2();
+     pauseMusic4();
+     playMusic3();
+    }
+   })
+   
+   //for song4
+   let isPlaying4 = false;
+   //for play function
+   const playMusic4 = () => {
+    isPlaying4 = true;
+    msg = "Song 4 is playing";
+    what.innerHTML=msg;
+    music4.play();
+   }
+   // for pause function
+   const pauseMusic4 = () => {
+    isPlaying4 = false;
+    music4.pause();
+   }
+   
+   play4.addEventListener('click', () => {
+    if (isPlaying4) {
+     pauseMusic4();
+    }
+    else {
+     pauseMusic();
+     pauseMusic2();
+     pauseMusic3();
+     playMusic4();
+    }
+   })
+  
+  </script>
+ </body>
+</html>

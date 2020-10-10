@@ -1,0 +1,45 @@
+* {
+ allign-items: center;
+ text-allign: center;
+color: #662027;
+}
+
+body {
+ background-image: url(happy.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+#h_one {
+ color: red;
+background-color: #3A0B0B;
+ animation: why 3s linear infinite;
+}
+
+#h_one_container {
+ width: 100%; height: 350px; padding: 0; margin: 0;
+ display: flex; flex-direction: row; justify-content: center; align-items: center;
+}
+
+#h_one_semi {
+ height: 117px;
+ background-image: url(made_by.png);
+ background-size: cover;
+}
+
+img {
+margin: 10px 75px;
+}
+
+#s_1, #s_2, #s_3, #s_4 {
+ width: 200px;
+ height: 400px;
+}
+
+/*Animation*/
+@keyframes why {
+ 0% {transform: rotate(0deg) rotateX(0deg) rotateY(0deg);}
+ 20% {transform: rotate(0deg) rotateX(0deg) rotateY(0deg);}
+ 60% {transform: rotate(360deg) rotateX(288deg) rotateY(288deg);}
+ 100% {transform: rotate(360deg) rotateX(360deg) rotateY(360deg);}
+}
