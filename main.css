@@ -21,6 +21,10 @@ background-color: #3A0B0B;
  display: flex; flex-direction: row; justify-content: center; align-items: center;
 }
 
+h1, h2 {
+color: #ddd;
+}
+
 #h_one_semi {
  height: 117px;
  background-image: url(made_by.png);
